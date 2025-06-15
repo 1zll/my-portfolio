@@ -48,14 +48,14 @@ const Home = () => {
                             fontSize={{ base: "lg", md: "2xl" }} 
                             mb={{ base: 6, md: 8 }}
                         >
-                            川瀬 真帆
+                            {/*name */}
                         </Text>
                         <Text
                             fontWeight="normal"
                             fontSize={{ base: "sm", md: "md" }}
                             mb={{ base: 6, md: 8 }}
                         >
-                            情報科学専門学校 情報セキュリティ学科
+                            {/*School name */}
                         </Text>
                         <Text
                             whiteSpace="pre-line"

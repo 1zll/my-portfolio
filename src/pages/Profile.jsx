@@ -45,7 +45,7 @@ const Profile = () => {
                         fontSize={{ base: "xl", md: "2xl" }} 
                         mb={{ base: 2, md: 4 }}
                     >
-                        川瀬 真帆
+                        {/*name */}
                     </Text>
                     <Text
                         fontWeight="semibold"
@@ -53,14 +53,14 @@ const Profile = () => {
                         fontSize={{ base: "md", md: "xl" }} 
                         mb={{ base: 6, md: 8 }}
                     >
-                        Maho Kawase
+                        {/*English name */}
                     </Text>
                     <Text
                         fontWeight="normal"
                         fontSize={{ base: "md", md: "xl" }}
                         mb={{ base: 6, md: 8 }}
                     >
-                        情報科学専門学校 情報セキュリティ学科
+                        {/*School name */}
                     </Text>
                     {/* メールアドレス */}
                     <Box
@@ -73,7 +73,7 @@ const Profile = () => {
                         
                     >
                         <IoMailOutline size={24} />
-                        <Text>cdkm1230091@gn.iwasaki.ac.jp</Text>
+                        <Text>School mail</Text>
                     </Box>
                     {/* Github */}
                     <Box
