@@ -1,11 +1,9 @@
 import { Box, Text, Flex, useBreakpointValue } from "@chakra-ui/react";
 import { useEffect, useRef } from "react";
+import { timelineItems } from "../data/history"; 
 
 //内容
-const timelineItems = [
-    { year: "****", month: "**", label: "****" },
-    { year: "****", month: "**", label: "****" },
-];
+
 
 const HistoryScroll = () => {
     //高さ調整と横スクロール制御
