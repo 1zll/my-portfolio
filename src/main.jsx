@@ -21,7 +21,7 @@ import PublicProfile from "./pages/public/Profile.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
-      <HashRouter basename="/my-portfolio">
+      <HashRouter>
         <ScrollToTop />
         <Layout>
           <Routes>
