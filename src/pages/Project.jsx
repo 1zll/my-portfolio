@@ -8,7 +8,7 @@ import projects from "../data/projects";
 import CustomButton from "../components/CustomButton";
 import Rectangle from "../assets/images/Rectangle.svg";
 import publicInfo from "../data/publicInfo";
-import jobInfo from "../data/jobInfo";
+import jobInfo from "../data/jobInfo.js";
 
 const Project = () => {
   const location = useLocation();
