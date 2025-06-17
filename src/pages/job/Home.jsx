@@ -4,7 +4,7 @@ import CustomHeading from "../../components/CustomHeading";
 import MySwiper from "../../components/MySwiper";
 import CustomButton from "../../components/CustomButton";
 import CustomFooter from "../../components/CustomFooter";
-import jobInfo from "../../data/jobInfo";
+import jobInfo from "../../data/jobInfo.js";
 
 const Home = () => {
     return (
