@@ -38,7 +38,7 @@ const projects = [
                 アニメーションの設定は再利用しやすく、他のプロジェクトにも応用可能です。`,
         role: ["Code","Design"],
         tools: ["HTML", "CSS", "JavaScript"],
-        url:"https://1zll.github.io/text_rotates/",
+        url:"https://1zll.github.io/text_rotates",
         styleguide:null
     },
     {
@@ -56,7 +56,7 @@ const projects = [
                 ミニマルな構成で見た目と操作性のバランスを追求しました。`,
         role: ["Code", "Design"],
         tools: ["HTML", "CSS", "JavaScript"],
-        url: 'https://1zll.github.io/Stopwatch/',
+        url: 'https://1zll.github.io/Stopwatch',
         styleguide:null
     },
     {
@@ -70,7 +70,7 @@ const projects = [
                 北欧の澄んだ空気感をイメージしてブルー系のカラーを採用し、ユーザビリティを意識した構成にしています。`,
         role: ["Code", "Design"],
         tools: ["HTML","CSS"],
-        url: 'https://1zll.github.io/finland_introduction/',
+        url: 'https://1zll.github.io/finland_introduction',
         styleguide:null
     },
     {
@@ -86,7 +86,7 @@ const projects = [
                 UIはミニマルで見やすく、どんなデバイスでも扱いやすい設計にしています。`,
         role: ["Code", "Design"],
         tools: ["HTML", "CSS", "JavaScript"],
-        url: 'https://1zll.github.io/Conversion/',
+        url: 'https://1zll.github.io/Conversion',
         styleguide:null
     }
 ]
