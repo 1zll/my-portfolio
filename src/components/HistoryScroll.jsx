@@ -1,11 +1,16 @@
+import { useLocation } from "react-router-dom";
 import { Box, Text, Flex, useBreakpointValue } from "@chakra-ui/react";
 import { useEffect, useRef } from "react";
-import { timelineItems } from "../data/history"; 
 
-//内容
-
+import { jobInfo } from "../data/jobInfo";
+import { publicInfo } from "../data/publicInfo";
 
 const HistoryScroll = () => {
+    const location = useLocation();
+    const isJob = location.pathname.startsWith("/job");
+
+    const info = isJob ? jobInfo : publicInfo;
+    
     //高さ調整と横スクロール制御
     const containerRef = useRef(null);
     const scrollRef = useRef(null);
@@ -77,7 +82,7 @@ const HistoryScroll = () => {
             zIndex={10}
             >
             <Box
-                minWidth={`${timelineItems.length * 500}px`}
+                minWidth={`${info.timelineItems.length * 500}px`}
                 position="relative"
                 h="300px"
             >
@@ -93,7 +98,7 @@ const HistoryScroll = () => {
                 transform="translateY(-50%)"
                 />
                 <Flex justify="space-between" h="100%" align="center">
-                {timelineItems.map((item, idx) => (
+                {info?.timelineItems.map((item, idx) => (
                     <Flex
                     key={idx}
                     position="relative"
@@ -145,7 +150,7 @@ const HistoryScroll = () => {
         ) : (
             //Mobile size
             <Box>
-            {timelineItems.map((item, idx) => (
+            {info.timelineItems.map((item, idx) => (
                 <Box
                 key={idx}
                 mb={6}

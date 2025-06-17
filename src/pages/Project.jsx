@@ -1,16 +1,42 @@
+import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { Box, Heading, Text, Flex } from "@chakra-ui/react";
 import CustomBadge from "../components/CustomBadge";
 import CustomFooter from "../components/CustomFooter";
 import { Link as RouterLink } from "react-router-dom";
 import projects from "../data/projects";
-import { useParams } from "react-router-dom";
 import CustomButton from "../components/CustomButton";
+import Rectangle from "../assets/images/Rectangle.svg";
+import publicInfo from "../data/publicInfo";
+import jobInfo from "../data/jobInfo";
 
 const Project = () => {
-  const { slug } = useParams();
+  const location = useLocation();
+  const { slug } = useParams(); 
+  console.log(location.pathname);
+
+  const isJob = location.pathname.startsWith("/job");
+  const isPublic = location.pathname.startsWith("/public");
+  
+  // データ切り替え
+  const info = isJob ? jobInfo : isPublic ? publicInfo : null;
+
+  // 戻るパスを直接文字列で
+  const backTo = isJob ? "/job/home" : isPublic ? "/public/home" : "/";
+  
   const project = projects.find((p) => p.slug === slug);
 
-  if (!project) return <Text>プロジェクトが見つかりません</Text>;
+  if (!project) {
+    return (
+      <Box py={20}>
+        <Center>
+          <Text fontSize="xl" color="red.500">
+            プロジェクトが見つかりません。
+          </Text>
+        </Center>
+      </Box>
+    );
+  }
 
   return (
     <>
@@ -28,7 +54,7 @@ const Project = () => {
         {/* 背景SVG（黄色） */}
         <Box
           as="img"
-          src="/images/Rectangle.svg"
+          src={Rectangle}
           alt="背景装飾"
           position="absolute"
           top="0"
@@ -135,7 +161,7 @@ const Project = () => {
 
       {/* Homeに戻る */}
       <Box display="flex" justifyContent="center" alignItems="center" my={6}>
-        <RouterLink to="/Home" _hover={{ textDecoration: 'none' }}>
+        <RouterLink to={backTo} _hover={{ textDecoration: 'none' }}>
           <CustomButton label="Back to home" />
         </RouterLink>
       </Box>

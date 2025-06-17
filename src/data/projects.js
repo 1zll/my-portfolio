@@ -1,8 +1,10 @@
 /* template
+    import ファイル名 from "../assets/ファイル名.png"
+
     title: "プロジェクト名（シンプルに）",
     slug: "プロジェクトのスラッグ（URL用、英語で）",
     year: 202X,
-    image: "/images/ファイル名.png",  // public/images に置くのがおすすめ
+    image: ファイル名,  // src/assetsに配置
     alt: "画像の説明（アクセシビリティ対策）",
     description: "どんな作品かを一言で説明（50〜60文字）",
     details: `この作品は、〇〇をテーマに制作しました。
@@ -15,13 +17,17 @@
     url: "https://～", // 公開URL
     styleguide: null // デザインガイドがあればパス、なければnullでOK
 */
+import text_rotates from "../assets/text_rotates.png";
+import stopwatch from "../assets/stopwatch.png";
+import finland_introduction from "../assets/finland_introduction.png";
+import conversion from "../assets/conversion.png";
 
 const projects = [
     {
         title:"文字が回転する",
         slug:"text_rotates",
         year:2023,
-        image:"../images/text_rotates.png",
+        image: text_rotates,
         alt:"回転する文字アニメーションを表示しているWebページの画像",
         description:"CSSアニメーションを活用した、文字が回転する視覚的なエフェクト作品",
         details: `この作品は、HTMLとCSSのみで文字を回転させるアニメーションを実装したものです。
@@ -39,7 +45,7 @@ const projects = [
         title: 'ストップウォッチ',
         slug: "stopwatch",
         year:2023,
-        image: '/images/stopwatch.png',
+        image: stopwatch,
         alt:"ニューモーフィズムデザインのストップウォッチ画面の画像",
         description: 'ニューモーフィズムデザインを活用したミニマルなストップウォッチ。',
         details: `この作品は、ニューモーフィズムの立体的なUI表現を活かして、
@@ -57,7 +63,7 @@ const projects = [
         title: 'フィンランドの観光サイト',
         slug: "finland_introduction",
         year:2024,
-        image: '/images/finland_introduction.png',
+        image: finland_introduction,
         alt:"フィンランドの自然や観光地を紹介するWebサイトのトップページ画像",
         description: 'フィンランドの魅力を紹介する観光紹介Webサイト',
         details: `このサイトは、フィンランドの自然や文化を伝えるために、シンプルで視認性の高いデザインに仕上げました。
@@ -71,7 +77,7 @@ const projects = [
         title: 'px→remに変換',
         slug: "conversion",
         year:2024,
-        image: '/images/conversion.png',
+        image: conversion,
         alt:"pxをremに変換するシンプルなツール画面の画像",
         description: 'pxをremに変換できるシンプルなツールサイト',
         details: `このWebツールは、入力されたpx値をremに変換するシンプルな計算ツールです。
