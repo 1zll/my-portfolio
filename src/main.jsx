@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { ChakraProvider } from "@chakra-ui/react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route, HashRouter } from "react-router-dom";
 import theme from "./theme/theme.js";
 import Layout from "./components/Layout.jsx";
 import ScrollToTop from "./components/ScrollToTop";
@@ -21,7 +21,7 @@ import PublicProfile from "./pages/public/Profile.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
-      <BrowserRouter basename="/my-portfolio">
+      <HashRouter basename="/my-portfolio">
         <ScrollToTop />
         <Layout>
           <Routes>
@@ -43,7 +43,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <Route path="/" element={<Start />} />
           </Routes>
         </Layout>
-      </BrowserRouter>
+      </HashRouter>
     </ChakraProvider>
   </React.StrictMode>
 );
