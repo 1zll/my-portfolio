@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { ChakraProvider } from "@chakra-ui/react";
-import { HashRouter, Routes, Route, HashRouter } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import theme from "./theme/theme.js";
 import Layout from "./components/Layout.jsx";
 import ScrollToTop from "./components/ScrollToTop";
