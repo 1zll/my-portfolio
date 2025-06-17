@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -r https://github.com/1zll/my-portfolio.git"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.2.4",
