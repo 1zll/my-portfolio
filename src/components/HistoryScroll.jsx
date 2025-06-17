@@ -2,10 +2,12 @@ import { useLocation } from "react-router-dom";
 import { Box, Text, Flex, useBreakpointValue } from "@chakra-ui/react";
 import { useEffect, useRef } from "react";
 
-import { jobInfo } from "../data/jobInfo";
+import jobInfo from "../data/jobInfo";
 import { publicInfo } from "../data/publicInfo";
 
 const HistoryScroll = () => {
+    console.log(info.timelineItems);
+
     const location = useLocation();
     const isJob = location.pathname.startsWith("/job");
 

@@ -13,6 +13,10 @@ const Start = () => {
         navigate(`${basePath}/home`);
     };
 
+    // .envからJOB_BASE_PATHを取得
+    const jobBasePath = import.meta.env.VITE_JOB_BASE_PATH || "/job";
+    const publicBasePath = import.meta.env.VITE_PUBLIC_BASE_PATH || "/public";
+
     return (
         <Box w="100vw" h="100vh" p={4} display="flex" justifyContent="center" alignItems="center">
             <Box
@@ -54,7 +58,13 @@ const Start = () => {
                 justifyContent="center"
                 alignItems="center"
                 p={6}
-                onClick={handleClick}
+                onClick={() => {
+                    // .envの値を使ってパスを判定
+                    const basePath = location.pathname.startsWith(jobBasePath)
+                        ? jobBasePath
+                        : publicBasePath;
+                    navigate(`${basePath}/home`);
+                }}
                 cursor="pointer"
                 >
                 <FileIcon />

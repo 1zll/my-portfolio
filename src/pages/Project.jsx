@@ -26,12 +26,15 @@ const Project = () => {
   
   const project = projects.find((p) => p.slug === slug);
 
+  // .envから環境変数を取得
+  const NOT_FOUND_MESSAGE = import.meta.env.REACT_APP_PROJECT_NOT_FOUND_MESSAGE || "プロジェクトが見つかりません。";
+
   if (!project) {
     return (
       <Box py={20}>
         <Center>
           <Text fontSize="xl" color="red.500">
-            プロジェクトが見つかりません。
+            {NOT_FOUND_MESSAGE}
           </Text>
         </Center>
       </Box>

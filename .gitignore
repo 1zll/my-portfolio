@@ -44,6 +44,5 @@ firebase.*.json
 coverage/
 
 # 就活用のファイル群（GitHubに絶対上げたくないやつ）
-src/data/jobInfo.js
 src/assets/job/
 
