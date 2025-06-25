@@ -6,6 +6,9 @@ import theme from "./theme/theme.js";
 import Layout from "./components/Layout.jsx";
 import ScrollToTop from "./components/ScrollToTop";
 
+const basename =
+  import.meta.env.MODE === "production" ? "/my-portfolio" : undefined;
+  
 // 共通ページ
 import Start from "./pages/Start.jsx";
 import Project from "./pages/Project.jsx";
@@ -22,7 +25,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
       {/* GitHub Pagesで /my-portfolio 以下にデプロイするなら basenameを設定 */}
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
         <ScrollToTop />
         <Layout>
           <Routes>
