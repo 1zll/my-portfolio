@@ -1,11 +1,17 @@
 import { AspectRatio, Box, Flex, Image, Text } from "@chakra-ui/react";
-import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink, useLocation, useNavigate } from "react-router-dom";
 import CustomHeading from "../../components/CustomHeading";
 import MySwiper from "../../components/MySwiper";
 import CustomButton from "../../components/CustomButton";
 import CustomFooter from "../../components/CustomFooter";
 
 const Home = () => {
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const jobBasePath = import.meta.env.VITE_JOB_BASE_PATH || "/job";
+    const publicBasePath = ""; // ← 必ず空文字に
+
     const timelineItemsStr = import.meta.env.VITE_TIMELINEITEMS;
         let timelineItems = [];
         if (timelineItemsStr && timelineItemsStr !== "undefined") {
@@ -90,7 +96,7 @@ const Home = () => {
                 </Text>
 
                 <Flex justify={{ base: "center", md: "flex-start" }}>
-                <RouterLink to="/job/Profile">
+                <RouterLink to="/job/profile">
                     <CustomButton label="View more" />
                 </RouterLink>
                 </Flex>

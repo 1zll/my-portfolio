@@ -6,8 +6,18 @@ import CustomButton from "../../components/CustomButton";
 import { Link as RouterLink } from "react-router-dom";
 import ProfileInfo from "../../components/ProfileInfo";
 import SkillSection from "../../components/SkillSection";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Profile = () => {
+    const location = useLocation();
+    const navigate = useNavigate();
+    const jobBasePath = import.meta.env.VITE_JOB_BASE_PATH || "/job";
+    const publicBasePath = ""; // ← ここを空文字に
+
+    const isJobRoute = location.pathname.startsWith(jobBasePath);
+
+    const homePath = isJobRoute ? "/job/home" : "/home"; // ← ここをシンプルに
+      
     return(
     <>
         {/* Profile (プロフィール) */}
@@ -46,7 +56,7 @@ const Profile = () => {
                 </Text>
             </Box>
             <Flex mt={8} justify="center">
-                <RouterLink to="/job/Home" _hover={{ textDecoration: 'none' }}>
+                <RouterLink to={homePath} _hover={{ textDecoration: 'none' }}>
                     <CustomButton label="Home" />
                 </RouterLink>
             </Flex>

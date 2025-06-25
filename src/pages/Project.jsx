@@ -16,13 +16,10 @@ const Project = () => {
   console.log(location.pathname);
 
   const isJob = location.pathname.startsWith("/job");
-  const isPublic = location.pathname.startsWith("/public");
-  
-  // データ切り替え
-  const info = isJob ? jobInfo : isPublic ? publicInfo : null;
+  const isPublic = !isJob; // ← これでOK
 
-  // 戻るパスを直接文字列で
-  const backTo = isJob ? "/job/home" : isPublic ? "/public/home" : "/";
+  const info = isJob ? jobInfo : publicInfo;
+  const backTo = isJob ? "/job/home" : "/home";
   
   const project = projects.find((p) => p.slug === slug);
 

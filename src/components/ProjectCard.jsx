@@ -14,7 +14,7 @@ import { useLocation, Link as ReactRouterLink } from 'react-router-dom'
 const ProjectCard = ({ title, image, alt , description, slug }) => {
 
     const location = useLocation();
-    const basePath = location.pathname.startsWith("/job") ? "/job" : "/public";
+    const basePath = location.pathname.startsWith("/job") ? "/job" : "";
 
     return (
         <Card

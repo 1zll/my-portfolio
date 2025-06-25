@@ -30,9 +30,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Layout>
           <Routes>
             {/* 公開用 */}
-            <Route path="/public/home" element={<PublicHome />} />
-            <Route path="/public/profile" element={<PublicProfile />} />
-            <Route path="/public/projects/:slug" element={<Project />} />
+            <Route path="/home" element={<PublicHome />} />
+            <Route path="/profile" element={<PublicProfile />} />
+            <Route path="/projects/:slug" element={<Project />} />
 
             {/* 就活用 */}
             <Route path="/job/home" element={<JobHome />} />

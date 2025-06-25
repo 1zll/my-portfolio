@@ -78,7 +78,7 @@ const Home = () => {
                             趣味：音楽鑑賞 / 美味しいもの食べること / ラテアートの練習`}
                         </Text>
                         <Flex justify={{ base: "center", md: "flex-start" }} mb={{ base: 6, md: 8 }}>
-                            <RouterLink to="/public/Profile">
+                            <RouterLink to="/profile">
                                 <CustomButton label="View more" />
                             </RouterLink>
                         </Flex>

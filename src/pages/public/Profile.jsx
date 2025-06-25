@@ -46,7 +46,7 @@ const Profile = () => {
                 </Text>
             </Box>
             <Flex mt={8} justify="center">
-                <RouterLink to="/public/Home" _hover={{ textDecoration: 'none' }}>
+                <RouterLink to="/home" _hover={{ textDecoration: 'none' }}>
                     <CustomButton label="Home" />
                 </RouterLink>
             </Flex>
