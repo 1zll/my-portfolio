@@ -22,7 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
       {/* GitHub Pagesで /my-portfolio 以下にデプロイするなら basenameを設定 */}
-      <BrowserRouter basename="/my-portfolio">
+      <BrowserRouter>
         <ScrollToTop />
         <Layout>
           <Routes>

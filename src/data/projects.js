@@ -37,7 +37,7 @@ const projects = [
                 シンプルながら目を引くUI演出を意識しました。
                 アニメーションの設定は再利用しやすく、他のプロジェクトにも応用可能です。`,
         role: ["Code","Design"],
-        tools: ["HTML", "CSS", "JavaScript"],
+        tools: ["HTML", "CSS"],
         url:"https://1zll.github.io/text_rotates",
         styleguide:null
     },

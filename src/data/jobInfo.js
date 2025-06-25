@@ -9,7 +9,7 @@ import {
     FaFigma,
 } from "react-icons/fa";
 
-const timelineItems = import.meta.env.VITE_TIMELINEITEMS;
+const timelineItems = JSON.parse(import.meta.env.VITE_TIMELINEITEMS);
 
 const jobInfo = {
     name: import.meta.env.VITE_NAME,
@@ -21,7 +21,7 @@ const jobInfo = {
         import.meta.env.VITE_MY_FACE,
         import.meta.env.VITE_MY_THUMBNAIL,
     ],
-    timelineItems: timelineItems,
+    timelineItems: timelineItems, // ← ここはそのまま
 };
 
 export const skills = [

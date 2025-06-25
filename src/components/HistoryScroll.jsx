@@ -6,12 +6,12 @@ import jobInfo from "../data/jobInfo";
 import { publicInfo } from "../data/publicInfo";
 
 const HistoryScroll = () => {
-    console.log(info.timelineItems);
-
     const location = useLocation();
     const isJob = location.pathname.startsWith("/job");
 
     const info = isJob ? jobInfo : publicInfo;
+    
+    console.log(info.timelineItems);
     
     //高さ調整と横スクロール制御
     const containerRef = useRef(null);

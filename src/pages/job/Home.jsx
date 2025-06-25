@@ -6,20 +6,30 @@ import CustomButton from "../../components/CustomButton";
 import CustomFooter from "../../components/CustomFooter";
 
 const Home = () => {
+    const timelineItemsStr = import.meta.env.VITE_TIMELINEITEMS;
+        let timelineItems = [];
+        if (timelineItemsStr && timelineItemsStr !== "undefined") {
+        try {
+            timelineItems = JSON.parse(timelineItemsStr);
+        } catch (e) {
+            console.error("VITE_TIMELINEITEMS のパースに失敗:", e);
+        }
+        } else {
+        console.warn("VITE_TIMELINEITEMS が未定義です");
+        }
 
-    const jobInfo = {
-        name: import.meta.env.VITE_NAME,
-        enName: import.meta.env.VITE_EN_NAME,
-        school: import.meta.env.VITE_SCHOOL,
-        email: import.meta.env.VITE_EMAIL,
-        github: import.meta.env.VITE_GITHUB,
-        photoPaths: [
-            import.meta.env.VITE_MY_FACE,
-            import.meta.env.VITE_MY_THUMBNAIL,
-        ],
-        timelineItem: JSON.parse(import.meta.env.VITE_TIMELINE),
-    };
-
+        const jobInfo = {
+            name: import.meta.env.VITE_NAME,
+            enName: import.meta.env.VITE_EN_NAME,
+            school: import.meta.env.VITE_SCHOOL,
+            email: import.meta.env.VITE_EMAIL,
+            github: import.meta.env.VITE_GITHUB,
+            photoPaths: [
+                import.meta.env.VITE_MY_FACE,
+                import.meta.env.VITE_MY_THUMBNAIL,
+            ],
+            timelineItem: timelineItems, // ← ここを修正
+        };
     return (
         <>
         <Image
