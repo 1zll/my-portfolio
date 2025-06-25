@@ -29,6 +29,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <ScrollToTop />
         <Layout>
           <Routes>
+            {/* 共通 */}
+            <Route path="/" element={<Start />} />
+            
             {/* 公開用 */}
             <Route path="/home" element={<PublicHome />} />
             <Route path="/profile" element={<PublicProfile />} />
@@ -39,8 +42,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <Route path="/job/profile" element={<JobProfile />} />
             <Route path="/job/projects/:slug" element={<Project />} />
 
-            {/* 共通 */}
-            <Route path="/" element={<Start />} />
           </Routes>
         </Layout>
       </BrowserRouter>
