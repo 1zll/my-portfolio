@@ -1,12 +1,12 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   plugins: [react()],
-  base: mode === 'production' ? '/my-portfolio/' : '/',  server: {
+  base: mode === 'production' ? '/my-portfolio/' : '/',
+  server: {
     historyApiFallback: {
       disableDotRule: true,
     }
-  }  
-})
+  }
+}))
