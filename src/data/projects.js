@@ -21,6 +21,7 @@ import text_rotates from "../assets/text_rotates.png";
 import stopwatch from "../assets/stopwatch.png";
 import finland_introduction from "../assets/finland_introduction.png";
 import conversion from "../assets/conversion.png";
+import todo from "../assets/todo.png";
 
 const projects = [
     {
@@ -88,6 +89,23 @@ const projects = [
         tools: ["HTML", "CSS", "JavaScript"],
         url: 'https://1zll.github.io/Conversion',
         styleguide:null
+    },
+    {
+        title: "TODOリスト",
+        slug: "todo",
+        year: 2025,
+        image: todo,
+        alt: "TODOリストの画像",
+        description: "タスクを追加・完了・削除できる、シンプルなToDoアプリ",
+        details: `この作品は、Material UIとReactを用いて制作したタスク管理アプリです。  
+                    MUIを使ってみたいという想いから、練習を兼ねてシンプルなUIで構築しました。  
+                    タスクの追加・削除・完了といった基本機能をReactで実装し、  
+                    Material UIでスタイリングやコンポーネント構成を整えました。
+                    一部の実装ではChatGPTのサポートを活用しつつ、自分で理解・調整しながら仕上げました。`,
+        role: ["Code", "Design"],
+        tools: ["React", "Material UI", "JavaScript", "HTML", "CSS"],
+        url: "https://1zll.github.io/todo/",
+        styleguide: null
     }
 ]
 export default projects;
