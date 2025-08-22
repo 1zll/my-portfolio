@@ -1,6 +1,12 @@
 # ToDo App
 My Portfolio<br>
 
+# Link
+↓このリンクをクリックすると見ることができます↓<br>
+https://1zll.github.io/my-portfolio/
+<br>
+詳しく知りたい場合**password**必須になります。
+
 
 # 概要
 
@@ -8,10 +14,9 @@ My Portfolio<br>
 ## できること
 
 
-
 ## 特徴
-・完了したら取り消し線が出てきて文字が灰色に変わる(~~文字を消す~~)<br>
-・ゴミ箱をアイコンにしてホバーしたら赤色に変わる
+・動きがある仕掛けにした
+・経歴の部分を今流行りのアクションを入れた
 
 
 ## 作成理由
@@ -22,11 +27,6 @@ My Portfolio<br>
 Vite<br>
 React<br>
 framework：Chakra UI
-
-
-# Link
-↓このリンクをクリックすると見ることができます↓<br>
-https://1zll.github.io/my-portfolio/
 
 
 ---
