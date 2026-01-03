@@ -112,7 +112,7 @@ const projects = [
   },
   {
     title: "1週間お天気アプリ",
-    slug: "weather-forecast-app",
+    slug: "weather_api",
     year: 2025,
     image: weather_api,
     alt: "東京の週間天気を表示するテーブル形式のWebアプリ画面",
