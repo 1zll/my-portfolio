@@ -1,12 +1,77 @@
-# React + Vite
+# ToDo App
+My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Link
+↓このリンクをクリックすると見ることができます↓<br>
+**https://1zll.github.io/my-portfolio/**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## ポートフォリオ閲覧までの流れ
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **フォーム入力**
+下記の申請フォームに必要事項をご入力ください。
+**[閲覧申請フォームはこちら](https://forms.gle/L9Ac3DZjiJsxzP9c7)**
+
+2. **内容確認**
+ご入力いただいた情報（会社名・WebサイトURL・ご連絡先など）を確認いたします。
+
+3. **パスワード送付**
+問題がなければ、申請いただいたメールアドレス宛に閲覧用パスワードをお送りします。
+
+
+---
+
+
+### ご注意
+- 本フォームは **企業関係者様限定** でのご利用をお願いしております。
+- 確認のため、会社公式WebサイトURLのご入力を必須としています。
+- ご回答内容に不備がある場合は、パスワードをお伝えできない場合がございます。
+
+
+# 概要
+
+
+## できること
+- 学生時代に作ったものをまとめて見れます
+- 私のことをなんとなく知れるようになってると思います...。
+
+## 特徴
+- 動きがある仕掛けにした
+- 経歴の部分を今流行りのアクションを入れた
+- 私のイメージカラーでよく選ばれる青とアクセントになる黄色を組み合わせて作った
+
+## 作成理由
+自分のポートフォリオを作りたかったため。<br>
+デザインからコーディングまで自分で作る経験が中々ないので作ってみたかった。
+
+## 技術スタック / Tech Stack
+
+このポートフォリオは以下の技術・ライブラリを使用して作成されています。<br>
+<sub>(把握している部分を記述しています)</sub>
+
+### フレームワーク・ライブラリ
+- **React** – UI構築（コンポーネントベース）
+- **Chakra UI** – デザインコンポーネント・レスポンシブ対応
+- **Emotion** – Chakra UIのスタイルエンジン
+- **Framer Motion** – アニメーション制御
+- **React Icons**　– アイコン表示
+- **React Router** – ルーティング管理
+- **Swiper** – スライダー / カルーセル表示
+
+### ビルド・開発ツール
+- **Vite** – 開発サーバー・ビルドツール
+- **ESLint** – コード品質・静的解析
+- **TypeScript型定義** – 型補完・開発補助
+- **gh-pages** – GitHub Pagesへのデプロイ
+
+### 言語
+- **JavaScript / JSX** – フロントエンドロジック・コンポーネント作成
+- **CSS / Chakra UIスタイル** – デザイン・レイアウト
+
+### デプロイ・ホスティング
+- **GitHub Pages** – 公開URL提供（`deploy` スクリプト使用）
+
+---
+
+**Thank you for checking out this project!**
