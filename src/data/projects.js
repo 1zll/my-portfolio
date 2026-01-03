@@ -22,6 +22,7 @@ import stopwatch from "../assets/stopwatch.png";
 import finland_introduction from "../assets/finland_introduction.png";
 import conversion from "../assets/conversion.png";
 import todo from "../assets/todo.png";
+import weather_api from "../assets/weather_api.png";
 
 const projects = [
   {
