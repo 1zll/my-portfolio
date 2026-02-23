@@ -23,6 +23,8 @@ import finland_introduction from "../assets/finland_introduction.png";
 import conversion from "../assets/conversion.png";
 import todo from "../assets/todo.png";
 import weather_api from "../assets/weather_api.png";
+import lejay_poster from "../assets/lejay_poster.png";
+import midnight_cafe from "../assets/midnight_cafe.png";
 
 const projects = [
   {
@@ -127,6 +129,40 @@ const projects = [
     role: ["Code", "Design"],
     tools: ["React", "Tailwind CSS", "JavaScript", "Illustrator"],
     url: "https://1zll.github.io/weather_api/",
+    styleguide: null,
+  },
+  {
+    title: "Photoshopの課題",
+    slug: "lejay_poster",
+    year: 2026,
+    image: lejay_poster,
+    alt: "画像の説明（アクセシビリティ対策）",
+    description: "どんな作品かを一言で説明（50〜60文字）",
+    details: `この作品は、〇〇をテーマに制作しました。
+                使用技術はHTML/CSS/JavaScript（必要に応じてReactやAPIなども）。
+                ポイントは△△で、□□のような演出・構成を意識しています。
+                ユーザー体験を重視し、デザインや操作性にこだわりました。
+                また、再利用性のある〇〇の記述にも注力しています。`,
+    role: ["Design"],
+    tools: ["Photoshop"],
+    url: "null",
+    styleguide: null,
+  },
+  {
+    title: "illustratorの課題",
+    slug: "midnight_cafe",
+    year: 2026,
+    image: midnight_cafe,
+    alt: "画像の説明（アクセシビリティ対策）",
+    description: "どんな作品かを一言で説明（50〜60文字）",
+    details: `この作品は、〇〇をテーマに制作しました。
+                使用技術はHTML/CSS/JavaScript（必要に応じてReactやAPIなども）。
+                ポイントは△△で、□□のような演出・構成を意識しています。
+                ユーザー体験を重視し、デザインや操作性にこだわりました。
+                また、再利用性のある〇〇の記述にも注力しています。`,
+    role: ["Design"],
+    tools: ["Illustrator"],
+    url: "null",
     styleguide: null,
   },
 ];
